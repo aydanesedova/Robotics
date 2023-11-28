@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B793FF;
+
+    .navbarcnt {
+        width: 77%;
+        height: 100%;
+
+        .navbaritemcnt {
+            background-color: transparent;
+            justify-content: flex-end;
+
+            ul {
+                display: flex;
+                gap: 13px;
+                list-style: none;
+
+                li {
+                    a {
+                        font-size: 12px;
+                        font-family: poppins;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+            }
+
+            .blogli {
+                position: relative;
+
+                &:hover .blogdropdown {
+                    display: block;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    li {
+                        &:hover {
+                            color: #a691ff;
+                        }
+                    }
+                }
+
+                .blogdropdown {
+                    display: none;
+                    position: absolute;
+                    width: 200%;
+                }
+            }
+
+            .dropdownli {
+                position: relative;
+
+                &:hover .dropdowndropdown {
+                    display: block;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    li {
+                        &:hover {
+                            color: #a691ff;
+                        }
+                    }
+                }
+
+                .dropdowndropdown {
+                    display: none;
+                    position: absolute;
+                    width: 180%;
+
+                    .level2li {
+                        position: relative;
+
+                        &:hover .level2dropdown {
+                            display: block;
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            li {
+                                color: black;
+
+                                &:hover {
+                                    color: #a691ff;
+                                }
+                            }
+                        }
+
+                        .level2dropdown {
+                            display: none;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#improvedProduction {
+    background-image: url(/assets/images/banner-bg.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .improvedProductionTxt {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+
+        h1 {
+            font-size: 55px;
+            color: white;
+            line-height: 72px;
+            width: 80%;
+            height: 70%;
+
+        }
+
+        P {
+            color: white;
+            font-size: 14px;
+        }
+
+        button {
+            width: 28%;
+            height: 13%;
+            color: black;
+            background-color: white;
+            border: none;
+            font-family: poppins;
+            font-size: 14px;
+            &:hover{
+                background-color: transparent;
+                color: white;
+                border: 1px solid  white;
+            }
+        }
+    }
+}
+
+#featuredRobotics {
+    width: 100%;
+    height: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+
+    .featuredRoboticsTxt {
+        height: 181px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            color: #222222;
+            font-size: 36px;
+            font-weight: 600;
+            font-family: poppins;
+        }
+
+        p {
+            color: #777777;
+            font-size: 14px;
+        }
+
+    }
+
+    .upperEyes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3px;
+        height: 100%;
+        width: 100%;
+
+        .upperEyesImg {
+            background-color: white;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h4 {
+            font-family: poppins;
+            font-size: 18px;
+            color: #222222;
+        }
+
+        p {
+            color: #777777;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        button {
+            width: 52%;
+            height: 70px;
+            color: black;
+            background-color: white;
+            border: none;
+            font-family: poppins;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: #C592FE;
+                border: 1px solid #828fff;
+                color: white;
+            }
+        }
+    }
+}
+#globllyConnect{
+    width: 100%;
+    height: 643px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .row{
+        margin: 0; padding: 0;
+        .robot {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .globllyConnectTxt{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    }
+    
+}
